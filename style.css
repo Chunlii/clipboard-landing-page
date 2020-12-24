@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    height: 100vh;
+}
+h1,h2,h3,h4{
+    color: hsl(210, 10%, 33%);
+}
+p{
+    color: hsl(201, 11%, 66%);
+    font-size: 14px;
+
+}
+header{
+    background-image: url('./images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+}
+.header-container{
+    text-align: center;
+    max-width: 50%;
+    margin: auto;
+}
+.logo{
+    margin: 20px;
+    margin-top: 60px;
+    width: 60px;
+}
+header h2{
+    margin-top: 10px;
+}
+header p{
+    font-size: 14px;
+    margin: 20px;
+}
+button{
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 10px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 5px;
+    outline: none;
+    padding: 15px 25px;
+}
+button:hover{
+    opacity: .7;
+}
+.IOS{
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0 5px 5px hsla(171, 66%, 44%, .3);
+}
+.MAC{
+    background-color:  hsl(233, 100%, 69%);
+    box-shadow: 0 5px 5px hsla(233, 100%, 69%, .3);
+}
+section{
+    margin: 90px auto;
+    max-width: 50%;
+    text-align: center;
+}
+section p{
+    margin-top: 10px;
+}
+.desktop-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.desktop{
+    margin-left: -70px;
+    width: 490px;
+}
+.text-area{
+    margin: auto;
+}
+.text-area div{
+    margin: 30px;
+}
+.text-area div >p{
+    margin-top: 5px;
+}
+.devices{
+    display: flex;
+    margin: auto;
+    width: 600px;
+}
+.perks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+}
+.perks div{
+    padding: 20px;
+}
+
+.perks img{
+    margin: 30px;
+    width: 45px;
+}
+.companies{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.companies img{
+    margin: 20px;
+    width: 100px;
+}
+.clipboard p{
+    margin: 20px;
+}
+footer{
+    background-color: hsl(204, 19%, 89%);
+    font-size: 14px; 
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+}
+.logo-footer{
+    margin: 30px 40px;
+}
+li{
+    list-style-type: none;
+    cursor: pointer;
+}
+li:hover{
+    color: hsl(171, 66%, 44%);
+}
+.footer-middle{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    grid-gap: 1.5em;
+    margin-left: -30px;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    margin-right: -50px;
+}
+.social-media a{
+    margin: 10px;
+}
+
+@media screen and (max-width: 700px){
+    .header-container, section, .text-area, .devices,.perks{
+        max-width: 85%;
+    } 
+    button{
+        margin-bottom: 10px;
+        width: 85%;
+    }
+    section{
+        margin-top: 120px;
+    } 
+    .desktop-section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .desktop{
+        margin-left:0;
+        max-width: 85%;
+    }
+    .text-area > div{
+        margin-top: 50px;
+    }
+    .devices{
+        margin-top: -30px;
+    }
+    .perks{
+        display: flex;
+        flex-direction: column;
+    }
+    .companies{
+        display: flex;
+        flex-direction: column;
+    }
+    .companies img{
+        margin: 30px;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-middle{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .social-media{
+        margin: 50px;
+    }
+}
